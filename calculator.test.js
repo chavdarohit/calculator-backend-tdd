@@ -10,4 +10,7 @@ describe("Calculator", () => {
   test("should subtract two numbers correctly", () => {
     expect(subtract(5, 3)).toBe(2);
   });
+  test("should multiply two numbers correctly", () => {
+    expect(multiply(2, 3)).toBe(6);
+  });
 });
