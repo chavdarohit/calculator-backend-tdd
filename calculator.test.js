@@ -16,4 +16,7 @@ describe("Calculator", () => {
   test("should return null when dividing by zero", () => {
     expect(divide(10, 0)).toBeNull();
   });
+  test("should give an error when passed the string in add function", () => {
+    expect(() => add(1, "a")).toThrow("Invalid input it must be a number");
+  });
 });
