@@ -1,1 +1,11 @@
-node_modules/
+# Dependencies
+/node_modules
+
+# Jest/Testing Artifacts
+/coverage        
+.jest-cache/   
+
+# Logs and Data
+npm-debug.log*
+yarn-error.log*
+.DS_Store
