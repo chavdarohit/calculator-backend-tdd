@@ -13,4 +13,7 @@ describe("Calculator", () => {
   test("should multiply two numbers correctly", () => {
     expect(multiply(2, 3)).toBe(6);
   });
+  test("should return null when dividing by zero", () => {
+    expect(divide(10, 0)).toBeNull();
+  });
 });
