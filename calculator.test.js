@@ -30,4 +30,7 @@ describe("Calculator", () => {
       })
     ).toThrow("Invalid input it must be a number");
   });
+  test("should return the correct division result", () => {
+    expect(divide(10, 2)).toBe(5);
+  });
 });
