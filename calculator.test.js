@@ -1,4 +1,4 @@
-import { add } from "./calculator.js";
+import { add, subtract } from "./calculator.js";
 
 describe("Calculator", () => {
   it("It should be true for Jest setup checks", () => {
@@ -6,5 +6,8 @@ describe("Calculator", () => {
   });
   test("should add two numbers correctly", () => {
     expect(add(1, 2)).toBe(3);
+  });
+  test("should subtract two numbers correctly", () => {
+    expect(subtract(5, 3)).toBe(2);
   });
 });
