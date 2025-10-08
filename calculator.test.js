@@ -19,4 +19,15 @@ describe("Calculator", () => {
   test("should give an error when passed the string in add function", () => {
     expect(() => add(1, "a")).toThrow("Invalid input it must be a number");
   });
+  test("should throw an error when given null as an argument", () => {
+    expect(() => add(5, null)).toThrow("Invalid input it must be a number");
+  });
+
+  test("should throw an error when given an object", () => {
+    expect(() =>
+      add(5, {
+        b: 1
+      })
+    ).toThrow("Invalid input it must be a number");
+  });
 });
